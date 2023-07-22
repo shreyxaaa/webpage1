@@ -1,7 +1,11 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
 .container {
@@ -10,66 +14,155 @@ body {
     padding: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo {
+    font-size: 24px;
+    margin: 0;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin: 0 10px;
 }
 
-.nav-links a {
-    text-decoration: none;
+/* Hero Section Styles */
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0;
     color: #fff;
 }
 
-.main {
-    padding: 40px 0;
-}
-
-#hero {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 100px 0;
-}
-
 #hero h2 {
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 .btn {
     display: inline-block;
-    background-color: #333;
-    color: #fff;
     padding: 10px 20px;
-    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     margin-top: 20px;
 }
 
-section {
-    padding: 40px 0;
+.btn:hover {
+    background-color: #0056b3;
 }
 
-section h2 {
+/* Features Section Styles */
+#features {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.feature-box {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.feature-box p {
+    font-size: 16px;
+}
+
+/* Products Section Styles */
+#products {
+    padding: 80px 0;
+}
+
+/* Testimonials Section Styles */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+/* Contact Section Styles */
+#contact {
+    text-align: center;
+    padding: 80px 0;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input,
+textarea,
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
     margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
