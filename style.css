@@ -1,58 +1,83 @@
-/* Add your CSS styles here */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-header {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Global styles */
+header, footer {
     background-color: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
 
-main {
-    padding: 1rem;
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.landing {
-    max-width: 600px;
-    margin: 0 auto;
+.brand img {
+    width: 40px;
+    margin-right: 0.5rem;
+}
+
+.brand h1 {
+    font-size: 1.5rem;
+}
+
+main {
     padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-label {
-    margin-bottom: 0.5rem;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+input, button {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-bottom: 1rem;
 }
 
-input[type="submit"] {
+button {
     background-color: #333;
     color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 3px;
     cursor: pointer;
+    border: none;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: #444;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
 }
