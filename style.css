@@ -1,168 +1,130 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-a:hover {
-    color: #0056b3;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
-.logo {
-    font-size: 24px;
-    margin: 0;
+h1 {
+  font-size: 24px;
+  margin: 0;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 10px 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
 }
 
 .nav-links li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 /* Hero Section Styles */
-#hero {
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 150px 0;
-    color: #fff;
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 150px 0;
+  color: #fff;
 }
 
-#hero h2 {
-    font-size: 36px;
-    margin: 0;
+h2 {
+  font-size: 36px;
+  margin: 0;
 }
 
-#hero p {
-    font-size: 18px;
-    margin-top: 20px;
+/* Categories Section Styles */
+.categories {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  text-align: center;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px;
+h3 {
+  font-size: 24px;
+  margin: 0;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.category-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
-/* Features Section Styles */
-#features {
-    text-align: center;
-    padding: 80px 0;
+.category-item {
+  position: relative;
 }
 
-.feature-box {
-    display: inline-block;
-    width: 30%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.category-link {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
 }
 
-.feature-box img {
-    width: 50px;
-    margin-bottom: 10px;
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.feature-box h3 {
-    font-size: 24px;
-    margin: 0;
+.category-item:hover .dropdown {
+  display: block;
 }
 
-.feature-box p {
-    font-size: 16px;
+.dropdown a {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  text-decoration: none;
 }
 
-/* Products Section Styles */
-#products {
-    padding: 80px 0;
+/* Call to Action Section Styles */
+.call-to-action {
+  text-align: center;
+  background-color: #007BFF;
+  padding: 80px 0;
 }
 
-/* Testimonials Section Styles */
-#testimonials {
-    background-color: #f9f9f9;
-    padding: 80px 0;
-}
-
-/* Contact Section Styles */
-#contact {
-    text-align: center;
-    padding: 80px 0;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-input,
-textarea,
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+.call-to-action h3 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
+
+footer p {
+  margin: 0;
+}
+
+/* Add any additional styles as needed */
